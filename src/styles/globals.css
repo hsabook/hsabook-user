@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  /*color: var(--foreground);*/
+  /*background: var(--background);*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Toàn bộ thanh cuộn */
+::-webkit-scrollbar {
+  width: 8px; /* Độ rộng thanh cuộn */
+  height: 8px; /* Độ cao nếu là thanh cuộn ngang */
+}
+
+/* Track của thanh cuộn (nền) */
+::-webkit-scrollbar-track {
+  background: transparent; /* Màu nền track */
+  border-radius: 4px; /* Bo góc */
+}
+
+/* Thumb (phần kéo) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Màu thanh kéo */
+  border-radius: 4px; /* Bo góc */
+}
+
+/* Thumb khi hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Màu khi hover */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: transparent;
+  transition: 0.2s;
+}
+
+.scroll-container:hover::-webkit-scrollbar-thumb {
+  background: #888;
+}
