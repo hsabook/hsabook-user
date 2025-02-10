@@ -6,7 +6,7 @@ const SearchSugestion = () => {
   const { listKeys } = useSuggestTion();
   const router = useRouter()
   return (
-    <div class="max-w-4xl mx-auto bg-white p-6 rounded-md">
+    <div class="mx-auto bg-white p-6 rounded-md ">
       <h1 class="text-[#2E7D32] text-xl font-medium mb-8">
         Bạn đang tìm kiếm gì?
       </h1>

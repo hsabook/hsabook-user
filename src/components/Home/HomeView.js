@@ -14,7 +14,7 @@ import dynamic from "next/dynamic";
 import FeedBackView from "../FeedBack/FeedBackView";
 import useSideBarLeft from "../Layout/SideBarLeft/useSideBarLeft";
 import { motion } from "framer-motion";
-import SliderView from "../Slider/SliderView";
+// import SliderView from "../Slider/SliderView";
 
 const SideBarLeftView = dynamic(
   () => import("@/components/Layout/SideBarLeft/SideBarLeftView"),
@@ -22,8 +22,8 @@ const SideBarLeftView = dynamic(
 );
 
 export default function HomeView() {
-  const router = useRouter();
-  const { userInfo } = useUserInfo();
+  // const router = useRouter();
+  // const { userInfo } = useUserInfo();
 
   const { open, onOpenModal, onCloseModal, onSubmit, isSubmitting } =
     useModalActiveBook();
@@ -70,9 +70,9 @@ export default function HomeView() {
             <i class="fas fa-mars mr-2"></i>
             Kích hoạt sách
           </button>
-          <SliderView />
+          {/* <SliderView /> */}
           <SearchSugestion />
-          <TeacherSuggestionView />
+          {/* <TeacherSuggestionView /> */}
           <CardView type={CARD_TYPE.EXAM} />
           <CardView type={CARD_TYPE.BOOK} />
           <FeedBackView title={"Vinh danh học sinh 2k6"} />
