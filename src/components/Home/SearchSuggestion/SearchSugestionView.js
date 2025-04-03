@@ -12,7 +12,7 @@ const SearchSugestion = () => {
       </h1>
 
       <div className="flex flex-wrap gap-3">
-        {listKeys.map((key, index) => (
+        {listKeys?.map((key, index) => (
           <div
             key={key.id}
             class="bg-[#F8F9FA] rounded-lg p-2 cursor-pointer hover:shadow-md"
